@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Progress Loader test</title>
+
+        <style type="text/css">
+
+		#container
+		{
+			margin-left:auto;
+			margin-right:auto;
+			background-color:#000000;
+			width:500px;
+			height:300px;
+			overflow:hidden;
+		}
+
+		.article
+		{
+
+			height:auto;
+			background-color:#000000;
+			color:#FFFFFF;
+			padding:10px;
+		}
+
+		.article_overlay
+		{
+			position:absolute;
+			width:500px;
+			height:300px;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+71,1+100 */
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 71%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 71%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 71%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /*IE6-9 */
+			text-align:center;
+		}
+
+		button
+		{
+			background-color:#FF4400;
+			border-radius:5px;
+			margin-top:20%;
+			padding:5px;
+		}
+	</style>
+
+	<script>
+		function readmore()
+		{
+			document.getElementById("container").style.height="auto";
+			document.getElementById("overlay").style.display="none";
+		}
+	</script>
+    </head>
+
+    <body>
+
+	<div id="container">
+		<div id="overlay" class="article_overlay">
+			<button onclick="readmore();">Read More</button>
+		</div>
+		<div id="article1" class="article">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie mollis mi non 
+
+finibus. Nulla rutrum feugiat nunc, eget tincidunt urna ultrices nec. Aenean viverra, lacus vel dignissim volutpat, neque 
+
+ex congue lorem, at posuere enim odio sit amet lorem. Morbi vitae feugiat urna. Suspendisse potenti. Vestibulum varius 
+
+malesuada libero vitae posuere. Cras blandit, est nec vestibulum tempus, magna eros elementum purus, id viverra dolor nunc 
+
+at orci. Nullam nec magna rutrum, maximus odio vel, tincidunt enim. </p>
+			<p>Etiam elit ex, semper ut mattis eu, elementum vitae purus. Ut venenatis enim eget malesuada 
+
+pellentesque. Praesent mauris eros, maximus sit amet interdum eget, tristique eu dui. Praesent finibus neque id eros 
+
+commodo imperdiet. Donec hendrerit ac nunc laoreet laoreet. Aenean molestie mi et libero luctus rhoncus. Integer consequat 
+
+ipsum ac turpis faucibus placerat. Integer lobortis non lectus quis euismod. In pellentesque in lorem in pulvinar. 
+
+Phasellus scelerisque vulputate nunc, sed congue mauris. Vivamus ac eleifend magna, et facilisis metus. </p>
+			<p>Nulla egestas sapien ligula, eget volutpat lorem eleifend ut. Pellentesque eu volutpat odio. 
+
+Proin interdum bibendum odio at rhoncus. Sed ut pretium ipsum, scelerisque molestie neque. Integer feugiat orci at elit 
+
+laoreet elementum. Pellentesque feugiat, dui ac porta tincidunt, est nulla facilisis arcu, ut convallis risus ex vitae 
+
+augue. Cras luctus, massa et commodo mattis, libero lectus dignissim felis, quis dapibus elit libero id turpis. </p>
+			<p>Sed vitae blandit lacus. Quisque accumsan eros ac ipsum tempor feugiat. Mauris condimentum 
+
+tellus eget ex facilisis malesuada. Ut vitae posuere magna, vel imperdiet nunc. In imperdiet mauris eu viverra aliquam. 
+
+Praesent gravida justo ac magna pulvinar, id gravida metus laoreet. Vivamus aliquam blandit volutpat. Sed scelerisque 
+
+vehicula nisl, vitae viverra lorem ullamcorper et. </p>
+			<p>In auctor risus non erat tempor pretium. Etiam vel consequat dui, eget gravida nisl. Phasellus 
+
+eu ipsum arcu. Donec nec sem et ex finibus facilisis eu a turpis. Integer aliquet felis in interdum rhoncus. Cras porta 
+
+dui dui, non luctus lorem suscipit et. Suspendisse at hendrerit libero. In vitae velit urna. Sed non ante ullamcorper, 
+
+porta est nec, porta diam. </p>
+			<p>Donec feugiat egestas nunc, eu scelerisque mi mattis quis. Vestibulum ante ipsum primis in 
+
+faucibus orci luctus et ultrices posuere cubilia Curae; Donec metus diam, elementum id mi sed, faucibus viverra ante. 
+
+Nullam mattis dignissim sagittis. Aenean vel neque quis lorem efficitur consectetur at eget dolor. Ut mattis metus 
+
+efficitur massa hendrerit malesuada. Vestibulum egestas malesuada nibh sed sagittis. Vivamus ac sapien vestibulum, 
+
+malesuada eros sit amet, consequat turpis. Vestibulum lacus justo, hendrerit vel dignissim non, vestibulum eget est. </p>
+			<p>Cras mattis elit eu nisl lacinia, eu cursus lacus tincidunt. Cras eu libero sed metus posuere 
+
+porta. Ut sed ante faucibus, condimentum sem a, sollicitudin nibh. Proin sit amet est ornare, fermentum purus eget, 
+
+feugiat metus. Suspendisse ipsum tortor, tincidunt sed vulputate sit amet, varius id lorem. Morbi gravida scelerisque 
+
+lectus at tristique. Etiam blandit leo at justo cursus, a tincidunt nisi dictum. Duis pellentesque vitae lacus sed congue. 
+
+</p>
+		</div>
+	</div>
+    </body>
+
+</html>  
